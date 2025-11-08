@@ -8,7 +8,7 @@ OctoAcme follows a structured yet iterative project management approach built on
 
 Our workflows emphasize small, testable increments with clear pull request guidelines: PRs should be ≤400 lines when possible, include issue links and acceptance criteria, and pass automated tests and security scans before review. The project board tracks work through standardized columns, and at least one approval is required before merging. CI gates enforce unit tests, integration tests, and security scanning, while end-to-end smoke tests validate critical flows before release. When deployments encounter issues, our rollback playbook provides clear incident response steps and post-incident retrospectives.
 
-Teams operate with well-defined personas and responsibilities. The **Project Manager (PM)** coordinates delivery, schedules, risk management, and communications. The **Product Manager (PdM)** defines outcomes, prioritizes the backlog, and measures success. **Developers** implement features with high test coverage and observability. **QA/Testing** validates quality against acceptance criteria. **Stakeholders** provide inputs, approvals, and business context. Communication follows a regular cadence: PM and PdM align weekly, the delivery team holds twice-weekly standups (or as agreed), stakeholders receive monthly updates, and ad-hoc escalations occur as needed. Risk management uses a simple register to track ID, description, impact, likelihood, owner, mitigation, and status, reviewed during weekly syncs.
+Teams operate with well-defined personas and responsibilities. The **Project Manager (PM)** coordinates delivery, schedules, risk management, and communications. The **Product Manager (PdM)** defines outcomes, prioritizes the backlog, and measures success. **Developers** implement features with high test coverage and observability. The **QA Lead** defines quality standards, coordinates testing cycles, and provides release signoff. The **Scrum Master** facilitates agile ceremonies, removes blockers, and promotes team productivity. The **UX Designer** ensures user-facing features meet usability and design standards. The **Business Analyst** clarifies requirements and aligns technical delivery with business objectives. **Stakeholders** provide inputs, approvals, and business context. Communication follows a regular cadence: PM and PdM align weekly, the delivery team holds daily standups facilitated by the Scrum Master, stakeholders receive regular updates, and ad-hoc escalations occur as needed. Risk management uses a simple register to track ID, description, impact, likelihood, owner, mitigation, and status, reviewed during weekly syncs.
 
 Quality assurance is embedded throughout the lifecycle. Unit tests validate new logic, integration tests cover component interactions, and end-to-end smoke tests protect critical user flows before each release. Security scanning runs automatically in CI pipelines. Our release checklist ensures all acceptance criteria are met, CI and security scans pass, release notes are drafted, and rollback plans are documented. Post-deploy verification and stakeholder announcements complete the release process. If issues arise, our incident playbook guides rollback to the last known-good release, root cause triage, and action item capture to prevent recurrence.
 
@@ -16,6 +16,7 @@ Quality assurance is embedded throughout the lifecycle. Unit tests validate new 
 
 Detailed guidance for each phase and topic:
 
+### Core Process Documents
 - [OctoAcme Project Management Overview](octoacme-project-management-overview.md) — Principles, roles, artifacts, and high-level lifecycle
 - [OctoAcme Project Initiation](octoacme-project-initiation.md) — Validate ideas, align stakeholders, create Project One-pagers
 - [OctoAcme Project Planning](octoacme-project-planning.md) — Build actionable backlogs, estimate scope, define release plans
@@ -23,10 +24,18 @@ Detailed guidance for each phase and topic:
 - [OctoAcme Risk Management & Communication](octoacme-risks-and-communication.md) — Risk registers, stakeholder updates, escalation paths
 - [OctoAcme Release & Deployment](octoacme-release-and-deployment.md) — Pre-release checklists, deployment steps, rollback playbooks
 - [OctoAcme Retrospective & Continuous Improvement](octoacme-retrospective-and-continuous-improvement.md) — Capture learnings, track action items
-- [OctoAcme Roles & Personas](octoacme-roles-and-personas.md) — Detailed responsibilities for PM, PdM, Developers, QA, Stakeholders
+
+### Roles and Templates
+- [OctoAcme Roles & Personas](octoacme-roles-and-personas.md) — Detailed responsibilities for all project roles including PM, Product Manager, Developers, QA Lead, Scrum Master, UX Designer, and Business Analyst
+- [QA Handoff Checklist](qa-handoff-checklist.md) — Step-by-step guide for developer-to-QA handoffs and QA signoff process
+- [Role Handoff Template](role-handoff-template.md) — Standardized template for handoffs between any roles to ensure clarity and completeness
 
 ## Acceptance Criteria
 
 - [ ] Content aligns with existing process docs
 - [ ] Update improves clarity or closes a documented gap
 - [ ] Proposed content has been reviewed with stakeholders (if needed)
+
+---
+
+_Documentation updated to address process gaps identified in [issue #4](https://github.com/igbera/skills-scale-institutional-knowledge-using-copilot-spaces/issues/4), including expanded roles (QA Lead, Scrum Master, UX Designer, Business Analyst) and improved handoff processes._
